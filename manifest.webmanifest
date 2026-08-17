@@ -1,0 +1,23 @@
+{
+  "name": "SetKey",
+  "short_name": "SetKey",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eef2f3",
+  "theme_color": "#6F8A90",
+  "icons": [
+    {
+      "src": "file_000000009e5c820d93308ee4d5530547.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "file_000000009e5c820d93308ee4d5530547.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
