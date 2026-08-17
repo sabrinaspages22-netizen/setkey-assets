@@ -29,11 +29,19 @@
   </style>
 </head>
 <body>
-  <div>Opening SetKey…</div>
+  <div id="browserMessage">
+    SetKey is ready. Add this page to your home screen.
+  </div>
   <script>
-    window.location.replace(
-      'https://script.google.com/macros/s/AKfycbyqX8iWHUnKPIWZ9F8QikBfLZU3n6t6SbpGKyBKYmncEBV7PfvtU1tojLdfN3685bFf/exec'
-    );
+    const isInstalled =
+      window.matchMedia('(display-mode: standalone)').matches ||
+      window.navigator.standalone === true;
+
+    if (isInstalled) {
+      window.location.replace(
+        'https://script.google.com/macros/s/AKfycbyqX8iWHUnKPIWZ9F8QikBfLZU3n6t6SbpGKyBKYmncEBV7PfvtU1tojLdfN3685bFf/exec'
+      );
+    }
   </script>
 </body>
 </html>
